@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard Administrateur !{% endblock %}
+
+{% block body %}
+ <div class="container mt-5">
+    <div class="row">
+       {% include 'dashboard/menu.html.twig' %}
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-center text-white">
+                    Gestion Utilisateurs
+                </div>
+                <div class="card-body">
+                     <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-stripped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Prénom
+                                        </th>
+                                        <th>
+                                            Nom
+                                        </th>
+                                        <th>
+                                            Email
+                                        </th>
+                                        <th>
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sami</td>
+                                        <td>Ben Salah</td>
+                                        <td>sami@emploi.tn</td>
+                                        <td>
+                                            <a href="#" style="width: 20px; height: 20px" class="btn btn-xs btn-danger">
+                                                x
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+{% endblock %}

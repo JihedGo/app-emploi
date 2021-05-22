@@ -5,19 +5,7 @@
 {% block body %}
  <div class="container mt-5">
     <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-header bg-primary text-center text-white">
-                    Menu Principale
-                </div>
-                <div class="card-body">
-                     <ul class="list-group">
-                        <li class="list-group-item"><a class="text-primary" href="#">Gestion Utilisateurs</a></li>
-                        <li class="list-group-item"><a class="text-primary" href="#">Gestion Publications</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        {% include 'dashboard/menu.html.twig' %}
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header bg-primary text-center text-white">
